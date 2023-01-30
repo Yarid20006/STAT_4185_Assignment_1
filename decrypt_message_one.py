@@ -41,3 +41,13 @@ encrypted_message = encrypted_file.readline()
 encrypted_file.close()
 
 # Write code below
+
+def code_decrypter(cipher_message, encrypted_message):
+    secret_message = " "
+    for i in encrypted_message:
+        for j in cipher_message:
+            if i == cipher_message[j]:
+                secret_message += j
+    return secret_message
+secret_message = code_decrypter(cipher, encrypted_message)
+print(secret_message)
