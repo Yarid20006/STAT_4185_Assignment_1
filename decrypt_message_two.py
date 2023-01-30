@@ -19,4 +19,3 @@ with open('encrypted_message_two.txt', 'r') as f:
     encrypted_message = f.read().strip()
     decrypted_message = decrypter(encrypted_message)
     print(decrypted_message)
-
